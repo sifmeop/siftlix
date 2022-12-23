@@ -3,12 +3,6 @@
   "defaultLocale": "ru",
   "localeDetection": false,
   "pages": {
-    "*": ["sidebar", "avatar", "global", "movie-page"],
-    "/login": ["authForm"],
-    "/register": ["authForm"],
-    "/favorites": ["favorites"],
-    "/reviews": ["reviews"],
-    "/discovery": ["discovery"],
-    "/actor/[id]": ["actor"]
+    "*": ["sidebar", "avatar", "global", "movie-page", "favorites", "reviews", "authForm", "discovery", "actor"]
   }
 }
