@@ -29,7 +29,7 @@ const MovieFav: NextPage<IProps> = ({ movie }) => {
     const reference = ref(db, 'favorites/' + `${localStorage.getItem('uid')!}/` + movie.id)
     try {
       await set(reference, { ...movie }).then(() => {
-        message.success(`${tGlobal('added')} ${movie.title ? tGlobal('movie') : tGlobal('tv')} ${movie.title}`)
+        message.success(`${tFavorites('added')} ${movie.title ? tGlobal('movie') : tGlobal('tv')} ${movie.title}`)
       })
     } catch (e) {
       console.log(e, 'addToFav DB')
@@ -40,7 +40,7 @@ const MovieFav: NextPage<IProps> = ({ movie }) => {
     const reference = ref(db, 'favorites/' + `${localStorage.getItem('uid')!}/` + movie.id)
     try {
       await remove(reference).then(() => {
-        message.success(`${tGlobal('removed')} ${movie.title ? tGlobal('movie') : tGlobal('tv')} ${movie.title}`)
+        message.success(`${tFavorites('removed')} ${movie.title ? tGlobal('movie') : tGlobal('tv')} ${movie.title}`)
       })
     } catch (e) {
       console.log(e, 'removeFromFav DB')
