@@ -1,0 +1,12 @@
+.languages {
+  @apply flex items-center gap-5;
+}
+
+.line {
+  @apply w-0.5 h-5 bg-white;
+}
+
+.active {
+  @apply text-lg font-bold;
+  color: #b73e3e;
+}

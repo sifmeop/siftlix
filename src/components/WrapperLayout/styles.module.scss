@@ -1,0 +1,9 @@
+@import 'src/assets/global/constants.scss';
+
+.content {
+  @apply min-h-full flex flex-col;
+  margin-left: rem(320px);
+  @media (max-width: 768px) {
+    margin-left: 0 !important;
+  }
+}

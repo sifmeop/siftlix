@@ -1,0 +1,11 @@
+@import 'src/assets/global/functions';
+
+.table {
+  & td {
+    @apply pb-3.5 pr-5;
+  }
+}
+
+.tableTitle {
+  @apply font-bold;
+}

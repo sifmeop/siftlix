@@ -1,0 +1,15 @@
+{
+  "greet-login": "Login to your account",
+  "greet-register": "Register your account",
+  "name": "Name",
+  "email": "Email",
+  "password": "Password",
+  "login": "Login",
+  "register": "Register",
+  "have-account": "Do you have an account?",
+  "dont-have-account": "Don't have an account?",
+  "or": "Or",
+  "valid-name": "Please input your name",
+  "valid-email": "Please input your email",
+  "valid-password": "Please input your password"
+}

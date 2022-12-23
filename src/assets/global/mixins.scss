@@ -1,0 +1,68 @@
+@import 'functions';
+
+@mixin title {
+  @apply text-3xl font-bold mb-5;
+}
+
+@mixin subTitle {
+  @apply text-2xl font-semibold mb-3;
+}
+
+@mixin hoverCard {
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  &:hover {
+    @apply drop-shadow-2xl;
+    transform: translateY(-0.25rem) !important;
+  }
+}
+
+@mixin transition {
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@mixin movies {
+  @apply grid grid-cols-4;
+  gap: rem(30px);
+  @media (max-width: 1024px) {
+    @apply grid-cols-3;
+    gap: rem(20px);
+  }
+  @media (max-width: 768px) {
+    @apply grid-cols-2;
+    gap: rem(10px);
+  }
+  @media (max-width: 375px) {
+    @apply grid-cols-1;
+  }
+}
+
+@mixin icon($color, $hover, $active) {
+  @apply cursor-pointer;
+  fill: $color;
+  transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
+  &:hover {
+    fill: $hover;
+    transform: scale(1.1);
+  }
+  &:active {
+    fill: $active;
+    transform: scale(1);
+  }
+}
+
+@mixin adaptiveList($repeat) {
+  @apply grid;
+  grid-template-columns: repeat($repeat, minmax(0, 1fr));
+  gap: rem(30px);
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat($repeat - 1, minmax(0, 1fr));
+    gap: rem(20px);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: rem(10px);
+  }
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

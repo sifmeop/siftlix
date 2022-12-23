@@ -1,0 +1,19 @@
+@import 'src/assets/global/functions';
+@import 'src/assets/global/mixins';
+
+.title {
+  @include title;
+}
+
+.video {
+  @apply w-full;
+  height: rem(625px);
+}
+
+.subTitle {
+  @include subTitle;
+}
+
+.description {
+  @apply mb-5;
+}

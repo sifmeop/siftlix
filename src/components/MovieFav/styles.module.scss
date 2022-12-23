@@ -1,0 +1,5 @@
+@import 'src/assets/global/mixins';
+
+.icon {
+  @include icon(#e97777, #e54a4a, #f69090);
+}

@@ -1,0 +1,33 @@
+@import 'src/assets/global/constants';
+@import 'src/assets/global/functions';
+
+.sidebar {
+  @apply h-screen w-full flex flex-col items-start fixed left-0 top-0 bottom-0 overflow-auto z-20;
+  flex: 0 0 $headerWidth;
+  max-width: $headerWidth;
+  min-width: $headerWidth;
+  padding: rem(30px);
+  color: $sidebarColor;
+  background-color: #191919;
+  transform: translateX(0);
+  transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
+  @media (min-width: 769px) {
+    transform: translateX(0) !important;
+  }
+  @media (max-width: 425px) {
+    @apply max-w-full;
+  }
+}
+
+.sidebarItems {
+  @apply w-full mb-auto;
+}
+
+.sidebarOff {
+  transform: translateX(-100%);
+}
+
+.sidebarTop {
+  @apply w-full flex items-center justify-between;
+  margin-bottom: rem(50px);
+}

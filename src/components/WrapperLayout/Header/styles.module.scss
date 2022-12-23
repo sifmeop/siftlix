@@ -1,0 +1,21 @@
+@import 'src/assets/global/functions';
+
+.header {
+  @apply relative flex items-center gap-5 mb-5;
+  background-color: #ffffff;
+  padding: rem(20px);
+}
+
+.bgMenu {
+  @apply hidden p-3 rounded-lg;
+  background-color: #3e3e3e;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: rem(10px);
+  }
+  .bgMenu {
+    @apply block;
+  }
+}

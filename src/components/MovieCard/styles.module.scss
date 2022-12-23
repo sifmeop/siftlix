@@ -1,0 +1,31 @@
+@import 'src/assets/global/mixins';
+
+.card {
+  @apply flex flex-col p-4 gap-2.5 shadow-xl;
+  background-color: rgb(255, 255, 255);
+  @include hoverCard;
+}
+
+.poster {
+  @apply max-w-full bg-black text-white;
+  max-height: 335px;
+}
+
+.title {
+  @apply font-bold;
+}
+
+.genres {
+  @apply whitespace-nowrap overflow-hidden text-ellipsis mb-auto;
+}
+
+.rating {
+  @apply flex items-center flex-wrap gap-2;
+}
+
+.icon {
+  @apply cursor-pointer;
+  & path {
+    stroke: #191919;
+  }
+}

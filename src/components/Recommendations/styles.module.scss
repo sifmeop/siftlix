@@ -1,0 +1,7 @@
+.recommendations {
+  @apply grid grid-cols-4 gap-3;
+}
+
+.title {
+  @apply text-2xl font-semibold mb-3;
+}

@@ -1,0 +1,7 @@
+@import 'src/assets/global/functions';
+
+.main {
+  @apply max-w-6xl mx-auto mb-5;
+  flex: 1 1 auto;
+  padding: 0 rem(20px);
+}

@@ -1,0 +1,40 @@
+@import 'src/assets/global/constants';
+@import 'src/assets/global/mixins';
+
+.title {
+  @include title;
+}
+
+.genres {
+  @include adaptiveList(3);
+}
+
+.genre {
+  @apply relative p-3 text-center rounded-lg shadow-lg overflow-hidden;
+  background-color: $red;
+  @include transition;
+  &:hover {
+    @include hoverCard;
+    background-color: $hoverRed;
+    transform: scale(0, 1.035);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    .img {
+      filter: brightness(100%);
+    }
+  }
+  &:active {
+    background-color: $activeRed;
+  }
+}
+
+.img {
+  @apply h-auto;
+  filter: brightness(60%);
+  @include transition;
+}
+
+.description {
+      @apply font-medium;
+  color: #ffffff;
+  transition: all 1s cubic-bezier(0.14, 0.65, 0.15, 1);
+}

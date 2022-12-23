@@ -1,0 +1,15 @@
+@import 'src/assets/global/functions';
+@import 'src/assets/global/mixins';
+
+.title {
+  @include title;
+}
+
+.movies {
+  @apply grid grid-cols-4;
+  gap: rem(30px);
+  @media (max-width: 1024px) {
+    @apply grid-cols-3;
+    gap: rem(20px);
+  }
+}

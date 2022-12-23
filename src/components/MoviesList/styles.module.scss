@@ -1,0 +1,10 @@
+@import 'src/assets/global/functions';
+@import 'src/assets/global/mixins';
+
+.title {
+  @include title;
+}
+
+.movies {
+  @include adaptiveList(4);
+}

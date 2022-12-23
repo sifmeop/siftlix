@@ -1,0 +1,25 @@
+@import 'src/assets/global/mixins';
+@import 'src/assets/global/functions';
+
+.actors {
+  @apply mb-3;
+}
+
+.title {
+  @include title;
+}
+
+.list {
+  @apply grid grid-cols-2 gap-5 mb-3;
+}
+
+.showMore {
+  @apply mx-auto block bg-slate-200 px-4 py-2 rounded-lg transition-colors text-xl cursor-pointer hover:underline hover:bg-slate-300;
+  max-width: rem(185px);
+}
+
+@media (max-width: 425px) {
+  .list {
+    @apply grid-cols-1;
+  }
+}
