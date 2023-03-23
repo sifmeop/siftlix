@@ -7,13 +7,13 @@ An online cinema where you can watch information about a movie / series / cartoo
 Clone the project
 
 ```bash
-  git clone https://github.com/sifmeop/siftdos.git
+  git clone https://github.com/sifmeop/siftflix.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd siftdos
+  cd siftflix
 ```
 
 Install dependencies
