@@ -1,6 +1,6 @@
 {
-  "locales": ["ru", "en"],
-  "defaultLocale": "ru",
+  "locales": ["en", "ru"],
+  "defaultLocale": "en",
   "localeDetection": false,
   "pages": {
     "*": ["sidebar", "avatar", "global", "movie-page", "favorites", "reviews", "authForm", "discovery", "actor"]

@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
-import styles from './styles.module.scss'
-import Search from './Search'
-import AvatarProfile from './Avatar'
 import MenuButton from '../../MenuButton'
+import AvatarProfile from './Avatar'
+import Search from './Search'
+import styles from './styles.module.scss'
 
 interface IProps {
   open: boolean
